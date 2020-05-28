@@ -10014,10 +10014,6 @@ label {
   outline: 0;
 }
 
-li {
-  list-style: none;
-}
-
 /* UTILITIES */
 .block {
   display: block;
@@ -10041,11 +10037,8 @@ li {
   display: flex;
 }
 
-.text-small {
-  font-size: 70%;
-}
-
 .central {
+  margin: auto;
   margin: auto;
 }
 
