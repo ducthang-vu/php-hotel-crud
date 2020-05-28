@@ -3,11 +3,14 @@
     include __DIR__ . '/partials/templates/head.php';
 ?>
 
-    <header>
-        <h1>Rooms</h1>
-    </header>
+<header>
+    <div class="container">
+        <h1 class="text-center">Rooms - Home</h1>
+    </div>
+</header>
 
-    <main>
+<main>
+    <div class="container">
         <table class="table">
             <thead>
                 <tr>
@@ -33,7 +36,8 @@
                 <?php } ?>
             </tbody>
         </table>
-    </main>
+    </div>
+</main>
 
 <?php
     include __DIR__ . '/partials/templates/footer.php'
