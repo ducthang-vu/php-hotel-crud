@@ -29,7 +29,7 @@
                         <td>
                             <?php echo $room['room_number']; ?>
                         </td>
-                        <td class=".text-info">
+                        <td class="text-info">
                             <a href="show.php?id=<?php echo $room['id'];?>">View</a>
                         </td>
                     </tr>

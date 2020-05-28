@@ -29,7 +29,7 @@
             </tr>
         </table>
 
-        <a href="index.php">Go back to Home.</a>
+        <a class="text-primary" href="index.php">Go back to Home.</a>
     </div>
 </main>
 
