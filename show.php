@@ -10,8 +10,8 @@
 </header>
 
 <main>
-    <div class="container">
-        <table class="table mb-5">
+    <div class="container text-center">
+        <table class="table mb-5 col-md-4 offset-md-4">
             <thead>
                 <tr>
                     <th scope="col">#</th>

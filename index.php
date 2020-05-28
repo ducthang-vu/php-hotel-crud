@@ -11,11 +11,11 @@
 
 <main>
     <div class="container">
-        <table class="table table-hover">
+        <table class="table table-hover col-md-4 offset-md-4">
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Room number</th>
+                    <th scope="col" class="text-center">Room number</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -26,7 +26,7 @@
                         <th scope="row">
                             <?php echo $room['id']; ?>
                         </th>
-                        <td>
+                        <td class="text-center">
                             <?php echo $room['room_number']; ?>
                         </td>
                         <td class="text-info">
