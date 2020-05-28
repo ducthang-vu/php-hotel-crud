@@ -1,4 +1,5 @@
 <?php
+    include __DIR__ . '/partials/script/home.php';
     include __DIR__ . '/partials/templates/head.php';
 ?>
 
@@ -17,13 +18,19 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>100</td>
-                    <td class=".text-info">
-                        <a href="">View</a>
-                    </td>
-                </tr>
+                <?php foreach($rooms as $room) { ?>
+                    <tr>
+                        <th scope="row">
+                            <?php echo $room['id']; ?>
+                        </th>
+                        <td>
+                            <?php echo $room['room_number']; ?>
+                        </td>
+                        <td class=".text-info">
+                            <a href="show.php?id=<?php echo $room['id'];?>">View</a>
+                        </td>
+                    </tr>
+                <?php } ?>
             </tbody>
         </table>
     </main>

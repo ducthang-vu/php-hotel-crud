@@ -16,7 +16,7 @@ mix.js('src/script/main.js', 'dist/script')
     .browserSync({
         proxy: 'http://localhost:80/php-hotel-crud/',
         files: [
-            "src/js/main.js",
+            "src/script/main.js",
             "src/scss/main.scss",
             "./**/*.php"
         ],
