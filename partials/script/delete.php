@@ -17,4 +17,5 @@ if ($result && $conn->affected_rows > 0) {
 } else {
     echo 'ERROR';
 }
-    
+
+$conn->close();

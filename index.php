@@ -45,7 +45,7 @@
                         <td class="text-danger">
                             <form action="<?php echo $base_path; ?>partials/script/delete.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $room['id']?>">
-                                <input class="btn btn-danger" type="submit">
+                                <input class="btn btn-danger" type="submit" value="Delete">
                             </form>
                         </td>
                     </tr>
