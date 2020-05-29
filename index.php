@@ -31,20 +31,20 @@
                 <?php foreach($rooms as $room) { ?>
                     <tr>
                         <th scope="row">
-                            <?php echo $room['id']; ?>
+                            <?php echo $room['id'] ?>
                         </th>
                         <td class="text-center">
-                            <?php echo $room['room_number']; ?>
+                            <?php echo $room['room_number'] ?>
                         </td>
                         <td class="text-info">
-                            <a href="show.php?id=<?php echo $room['id'];?>">View</a>
+                            <a href="show.php?id=<?php echo $room['id']?>">View</a>
                         </td>
                         <td class="text-warning">
-                            <a href="./edit?id=<?php echo $room['id'] ?>">Update</a>
+                            <a href="<?php echo $base_path; ?>edit.php?id=<?php echo $room['id'] ?>">Update</a>
                         </td>
                         <td class="text-danger">
                             <form action="<?php echo $base_path; ?>partials/script/delete.php" method="POST">
-                                <input type="hidden" name="id" value="<?php echo $room['id'];?>">
+                                <input type="hidden" name="id" value="<?php echo $room['id']?>">
                                 <input class="btn btn-danger" type="submit">
                             </form>
                         </td>

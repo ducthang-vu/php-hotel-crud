@@ -8,6 +8,6 @@
         </div>
     </footer>
     
-    <script src="<?php echo $base_path; ?>dist/script/main.js"></script>
+    <script src="<?php echo $base_path ?>dist/script/main.js"></script>
     </body>
 </html> 

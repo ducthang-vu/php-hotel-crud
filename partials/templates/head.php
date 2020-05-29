@@ -18,7 +18,7 @@
 
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo $base_path; ?>">Back to archive</a>
+                    <a class="nav-link" href="<?php echo $base_path ?>">Back to archive</a>
                 </li>
             </ul>
         </nav>
