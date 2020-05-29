@@ -5,7 +5,7 @@
 ?>
 
 <?php if (!empty($_GET['del'])) { ?>
-    <div class="alert alert-success">Room deleted</div>
+    <div class="alert alert-success pl-5">Room deleted</div>
 <?php } ?>
 
 <header>
