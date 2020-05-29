@@ -2,7 +2,7 @@
 include_once __DIR__ . '/../data/data.php';
 
 if(empty($_POST['id'])) {
-    die('ID not found');
+    die('Error: no id was passed');
 }
 
 $id_room = $_POST['id'];
@@ -12,7 +12,7 @@ $floor = $_POST['floor'];
 
 $sql = "UPDATE `stanze`
         SET `room_number` = $room_number,
-            `beds` = $bed,
+            `beds` = $beds,
             `floor` = $floor
         WHERE `id` = $id_room";
 

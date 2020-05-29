@@ -2,7 +2,7 @@
 include_once __DIR__ . '/../data/data.php';
 
 if (!empty($_GET['id'])) {
-    $id_room = $GET['id'];
+    $id_room = $_GET['id'];
     $sql = "SELECT * 
             FROM `stanze`
             WHERE `id` = $id_room";
@@ -14,7 +14,7 @@ if (!empty($_GET['id'])) {
         die('id not found');
     }
 } else {
-    die('impossibile ottenere la stanza da editare');
+    die('Error');
 }
 
 $conn->close();

@@ -1,6 +1,5 @@
 <?php
     include_once __DIR__ . '/partials/update/server-edit.php';
-    include __DIR__ . '/partials/script/show.php';
     include __DIR__ . '/partials/templates/head.php';
 ?>
 
@@ -9,7 +8,7 @@
         <div class="col-12">
             <header class="my-4">
                 <h1 class="text-primary">
-                    Edit room
+                    Edit room #<?php echo $room['id']?>
                 </h1>
             </header>
 
@@ -28,7 +27,7 @@
                 </div>
                 <div class="form-group text-right">
                     <input type="hidden" name="id" value="<?php echo $room['id'] ?>">
-                    <input class="btn btn-primary" type="submit">
+                    <input class="btn btn-primary" type="submit" value="Save">
                 </div>
             </form>
         </div>
