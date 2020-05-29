@@ -1,10 +1,11 @@
 <?php
+    include_once __DIR__ . '/env.php';
     include __DIR__ . '/partials/script/home.php';
     include __DIR__ . '/partials/templates/head.php';
 ?>
 
-<?php if (!empty($_GET['GET'])) { ?>
-    <div class="alert alert-success">Stanza cancellata</div>
+<?php if (!empty($_GET['del'])) { ?>
+    <div class="alert alert-success">Room deleted</div>
 <?php } ?>
 
 <header>
@@ -42,9 +43,9 @@
                             <a href="./edit?id=<?php echo $room['id'] ?>">Update</a>
                         </td>
                         <td class="text-danger">
-                            <form action="./partials/delete.php" method="POST">
+                            <form action="<?php echo $base_path; ?>partials/script/delete.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $room['id'];?>">
-                                <input class="btn btn-danger" type="text" value="Delete">
+                                <input class="btn btn-danger" type="submit">
                             </form>
                         </td>
                     </tr>

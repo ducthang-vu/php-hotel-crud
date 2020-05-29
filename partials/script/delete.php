@@ -1,5 +1,4 @@
 <?php
-// conncet
 include_once __DIR__ . '/../data/data.php';
 
 if (empty($_POST['id'])) {
