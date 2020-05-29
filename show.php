@@ -31,7 +31,7 @@
 
         <!--<a class="text-primary" href="index.php">Go back to Home.</a>-->
         
-        <a class="btn btn-primary" href="<?php echo $base_path ?>/edit.php?id=<?php echo $room['id'] ?>">Update</a>
+        <a class="btn btn-warning" href="<?php echo $base_path ?>/edit.php?id=<?php echo $room['id']; ?>">Update</a>
     </div>
 </main>
 
