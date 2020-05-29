@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="<?php echo $base_path; ?>dist/css/main.css">
 </head>
 <body>
-
     <header class="main-header">
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Boolean Hotel</a>

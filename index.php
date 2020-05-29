@@ -15,13 +15,13 @@
 
 <main>
     <div class="container">
-        <table class="table table-hover col-md-4 offset-md-4">
+        <table class="table table-hover col-md-6 offset-md-3">
             <thead>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col" class="text-center">Room number</th>
                     <th scope="col"></th>
-                    <th scope="col"></th>
+                    <th scope="col">Options</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -38,14 +38,14 @@
                         <td class="text-info">
                             <a href="show.php?id=<?php echo $room['id'];?>">View</a>
                         </td>
+                        <td class="text-warning">
+                            <a href="./edit?id=<?php echo $room['id'] ?>">Update</a>
+                        </td>
                         <td class="text-danger">
                             <form action="./partials/delete.php" method="POST">
                                 <input type="hidden" name="id" value="<?php echo $room['id'];?>">
                                 <input class="btn btn-danger" type="text" value="Delete">
                             </form>
-                        </td>
-                        <td>
-                            <a href="./edit?id=<?php echo $room['id'] ?>"></a>
                         </td>
                     </tr>
                 <?php } ?>
