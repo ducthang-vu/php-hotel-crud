@@ -14,11 +14,11 @@
 <body>
     <header class="main-header">
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Boolean Hotel</a>
+            <a class="navbar-brand ml-5" href="#">Boolean Hotel</a>
 
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto ml-5">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo $base_path ?>">Back to archive</a>
+                    <a class="nav-link" href="<?php echo $base_path ?>">Archive</a>
                 </li>
             </ul>
         </nav>
