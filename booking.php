@@ -5,7 +5,7 @@
 
 <header>
     <div class="container">
-        <h1 class="text-center">Hotel booking</h1>
+        <h1 class="text-center">Hotel bookings</h1>
     </div>
 </header>
 
@@ -15,9 +15,7 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Room number</th>
-                    <th scope="col">floor</th>
-                    <th scope="col">beeds</th>
+                    <th scope="col">Room Id</th>
                     <th scope="col">updated</th>
                     <th scope="col">created</th>
                 </tr>
@@ -28,15 +26,7 @@
                     <th scope="row"><?php echo $b['id'] ?></th>
                     <td><?php echo $b['stanza_id'] ?></td>
                     <td><?php echo $b['created_at'] ?></td>
-                    <td>
-                        <a href="">view</a>
-                    </td>
-                    <td>>
-                        <a href="">Update</a>
-                    </td>
-                    <td>
-                        <a href="">Delete</a>
-                    </td>
+                    <td><?php echo $b['updated_at'] ?></td>
                 </tr>
             <?php } ?>
         </table>
