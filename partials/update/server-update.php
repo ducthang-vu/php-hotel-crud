@@ -21,7 +21,8 @@ $sql = "UPDATE `stanze`
 $sql = "UPDATE `stanze`
         SET `room_number` = ?,
             `beds` = ?,
-            `floor` = ?.
+            `floor` = ?,
+            `updated_at` = NOW()
         WHERE `id` = ?";
 
 $stmt = $conn-> prepare($sql);
@@ -31,7 +32,7 @@ $stmt->execute();
 $result = $conn->query($sql);
 
 if ($stmt && $stmt->affected_rows > 0) {
-    header("location: $base_pathshow" . "php?id=$id_room");
+    header("location: $base_path" . "show.php?id=$id_room");
 } elseif ($stmt) {
     die('Nessuna room trovata');
 } else {

@@ -11,13 +11,15 @@
 
 <main>
     <div class="container text-center">
-        <table class="table mb-5 col-md-4 offset-md-4">
+        <table class="table mb-5 col-md-8 offset-md-2">
             <thead>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Room number</th>
                     <th scope="col">floor</th>
                     <th scope="col">beeds</th>
+                    <th scope="col">updated</th>
+                    <th scope="col">created</th>
                 </tr>
             </thead>
         <tbody>
@@ -26,6 +28,8 @@
                 <td><?php echo $room['room_number'] ?></td>
                 <td><?php echo $room['floor'] ?></td>
                 <td><?php echo $room['beds'] ?></td>
+                <td><?php echo $room['created_at'] ?></td>
+                <td><?php echo $room['updated_at'] ?></td>
             </tr>
         </table>
 
