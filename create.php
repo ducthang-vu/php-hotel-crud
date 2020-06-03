@@ -1,4 +1,5 @@
 <?php
+    include_once __DIR__ . '/env.php';
     include __DIR__ . '/partials/templates/head.php';
 ?>
 
@@ -6,7 +7,7 @@
     <div class="col-md-4 offset-md-4">
         <header class="my-4">
             <h1 class="text-center text-primary">
-                Create room <?php echo $room['id']?>
+                Create room
             </h1>
         </header>
 

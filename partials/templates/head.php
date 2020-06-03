@@ -1,5 +1,5 @@
 <?php
-    include_once __DIR__ . '../env.php';
+    include_once __DIR__ . '/../../env.php';
 ?>
 
 <!DOCTYPE html>

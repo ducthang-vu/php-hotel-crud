@@ -1,4 +1,5 @@
 <?php
+    include_once __DIR__ . '/env.php';
     include __DIR__ . '/partials/booking/server.php';
     include __DIR__ . '/partials/templates/head.php';
 ?>
