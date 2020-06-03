@@ -2,16 +2,17 @@
 
 // GET ALL RECORDS FROM A DB TABLE
 function getAll($conn, $table) {
-    $sql = "SeELECT * FROM `$table`";
+    $sql = "SELECT * 
+            FROM `$table`";
     $result = $conn->query($sql);
 
-    if ($result && $result->num_rows > 0) {
+    if ($result && $result->num_rows > 0)  {
         $records = [];
         while($row = $result->fetch_assoc()) {
             $records[] = $row;
         }
     } elseif ($result) {
-        $recors = [];
+        $records = [];
     } else {
         $records = false;
     }
@@ -23,7 +24,9 @@ function getAll($conn, $table) {
 
 
 function getById($conn, $table, $id) {
-    $sql = "SeELECT * FROM `$table` WHERE `id` = $id";
+    $sql = "SELECT * 
+            FROM `$table` 
+            WHERE `id` = $id";
     $result = $conn->query($sql);
 
     if ($result && $result->num_rows > 0) {

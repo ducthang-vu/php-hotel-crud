@@ -10,7 +10,7 @@
             </h1>
         </header>
 
-        <form action="./partials/create/server.php" method="POST">
+        <form action="./partials/create/create.php" method="POST">
             <div class="form-group">
                 <label for="room_number">Room number</label>
                 <input type="number" class="form-control" name="room_number" id="room_number" placeholder="Insert room number">
