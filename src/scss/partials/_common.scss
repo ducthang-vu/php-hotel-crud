@@ -25,6 +25,8 @@ html {
 
 body {
     font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+    @include flex($direction: column);
 }
 
 button,
@@ -77,4 +79,12 @@ label {
 
 .in-block {
     display: inline-block;
+}
+
+body> * {
+    width: 100%;
+}
+
+#app {
+    flex-grow: 1;
 }

@@ -13,13 +13,21 @@
 </head>
 <body>
     <header class="main-header">
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expanded navbar-dark bg-dark">
             <a class="navbar-brand ml-5" href="#">Boolean Hotel</a>
 
-            <ul class="navbar-nav mr-auto ml-5">
+            <ul class="navbar-nav mr-5  ml-5">
                 <li class="nav-item active">
                     <a class="nav-link" href="<?php echo $base_path ?>">Archive</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?php echo $base_path . "create.php" ?>">New room</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?php echo $base_path . "create.php" ?>">Bookings</a>
                 </li>
             </ul>
         </nav>
     </header>
+
+    <div id="app" class="pb-2">

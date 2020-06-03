@@ -1,11 +1,11 @@
 <?php
-    include __DIR__ . '/partials/script/show.php';
+    include __DIR__ . '/partials/booking/server.php';
     include __DIR__ . '/partials/templates/head.php';
 ?>
 
 <header>
     <div class="container">
-        <h1 class="text-center">Room - details</h1>
+        <h1 class="text-center">Hotel booking</h1>
     </div>
 </header>
 
@@ -23,19 +23,23 @@
                 </tr>
             </thead>
         <tbody>
-            <tr>
-                <th scope="row"><?php echo $room['id'] ?></th>
-                <td><?php echo $room['room_number'] ?></td>
-                <td><?php echo $room['floor'] ?></td>
-                <td><?php echo $room['beds'] ?></td>
-                <td><?php echo $room['created_at'] ?></td>
-                <td><?php echo $room['updated_at'] ?></td>
-            </tr>
+            <?php foreach($bookings as $b) { ?>
+                <tr>
+                    <th scope="row"><?php echo $b['id'] ?></th>
+                    <td><?php echo $b['stanza_id'] ?></td>
+                    <td><?php echo $b['created_at'] ?></td>
+                    <td>
+                        <a href="">view</a>
+                    </td>
+                    <td>>
+                        <a href="">Update</a>
+                    </td>
+                    <td>
+                        <a href="">Delete</a>
+                    </td>
+                </tr>
+            <?php } ?>
         </table>
-
-        <!--<a class="text-primary" href="index.php">Go back to Home.</a>-->
-        
-        <a class="btn btn-warning" href="<?php echo $base_path ?>edit.php?id=<?php echo $room['id']; ?>">Update</a>
     </div>
 </main>
 

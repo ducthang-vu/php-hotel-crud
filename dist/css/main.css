@@ -10001,6 +10001,12 @@ html {
 
 body {
   font-family: "Roboto Mono", monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 button,
@@ -10052,4 +10058,12 @@ label {
 
 .in-block {
   display: inline-block;
+}
+
+body > * {
+  width: 100%;
+}
+
+#app {
+  flex-grow: 1;
 }
