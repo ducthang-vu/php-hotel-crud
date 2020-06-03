@@ -26,13 +26,13 @@ $sql = "UPDATE `stanze`
 
 $stmt = $conn-> prepare($sql);
 $stmt->bind_param('iiii', $room_number, $beds, $floor, $id_room);
-
+$stmt->execute();
 
 $result = $conn->query($sql);
 
-if ($result && $conn->affected_rows > 0) {
-    header("location: $base_path/show.php?id=$id_room");
-} elseif ($result) {
+if ($stmt && $stmt->affected_rows > 0) {
+    header("location: $base_pathshow" . "php?id=$id_room");
+} elseif ($stmt) {
     die('Nessuna room trovata');
 } else {
     die('ERROR');
