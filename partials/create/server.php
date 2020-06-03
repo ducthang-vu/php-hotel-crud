@@ -7,7 +7,7 @@ if (empty($_POST['room_number']) || empty($_POST['room_number']) || empty($_POST
 
 $room_number = $_POST['room_number'];
 $beds = $_POST['beds'];
-$floor = $_post['floor'];
+$floor = $_POST['floor'];
 
 
 // Query insert new room
